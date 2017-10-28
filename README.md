@@ -16,4 +16,11 @@ Q3:如何在IDEA中运行Servlet小程序？
 
 A3:不修改web.xml文件，直接在Servlet类前加上注解`@WebServlet(name = "TestServlet" ,urlPatterns = {"/HelloServlet"})`。IDEA会帮你生产`name`,但是`urlPatterns`不会生产，需要手动填写。其次还需要注意，`servlet`类是无法运行的，不要找了。直接打开浏览器在最后面添上类名就好。
 
+---
+
+### Day2
+添加了一个类TestHTTP,模拟浏览器的行为，获取页面。
+这个仓库里的文件主要是用于测试Tomcat，学习在IDEA下建立Tomcat工程。
+
+
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
