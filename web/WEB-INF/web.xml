@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <!--<servlet>
+    <servlet>
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>testtomcat.servlet.HelloServlet</servlet-class>
     </servlet>
@@ -11,5 +11,15 @@
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/HelloServlet</url-pattern>
-    </servlet-mapping>-->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hq</servlet-name>
+        <servlet-class>Parameters</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hq</servlet-name>
+        <url-pattern>/TestTomcat/test</url-pattern>
+    </servlet-mapping>
 </web-app>

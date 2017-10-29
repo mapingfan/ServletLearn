@@ -41,5 +41,9 @@ A3:不修改web.xml文件，直接在Servlet类前加上注解`@WebServlet(name 
  url-pattern永远以/开头。相对web application为根路径。这个地方的url随便写。
  当我们输入/abc后，程序会找HW的servlet小程序，然后寻找相应的class文件。表面上访问/abc，实际执行的是servlet小程序。 -->
 ```
+---
 
+### Day3
+
+通过`do get`方法获得参数。通过静态网页表单的`action`事件，调用容器中的`servlet`小程序。
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
