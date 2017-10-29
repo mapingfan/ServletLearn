@@ -49,5 +49,7 @@ A3:不修改web.xml文件，直接在Servlet类前加上注解`@WebServlet(name 
 Web程序三大件：`cookie,session,application`.这三个东西始终围绕`web`应用。其实这个三个东西都是容器，存放一些信息。针对`http`的无连接特性，有了`cookie，session`,保存会话信息。其中`cookie`是保存在客户端电脑上的，服务器根据`cookie`验证用户。`session`只存放当前浏览器页面中，页面一旦关闭，`session`也就没了。`application`也叫`context`，上下文，是一块公共区域，存储当前`WebApp`应用下所有`servlet`小程序可以访问的内容。这个区域是容器内部小程序共享的。
 对于这三个东西，要搞清楚，才能理解`web`开发。
 
+学习`Java Bean`,了解`Bean`存在的理由，只是一套标准，一个类。使用`Bean`类封装数据库连接相关信息，在`servlet`中连接数据库，读数据。
+
 
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
