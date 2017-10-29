@@ -46,4 +46,8 @@ A3:不修改web.xml文件，直接在Servlet类前加上注解`@WebServlet(name 
 ### Day3
 
 通过`do get`方法获得参数。通过静态网页表单的`action`事件，调用容器中的`servlet`小程序。
+Web程序三大件：`cookie,session,application`.这三个东西始终围绕`web`应用。其实这个三个东西都是容器，存放一些信息。针对`http`的无连接特性，有了`cookie，session`,保存会话信息。其中`cookie`是保存在客户端电脑上的，服务器根据`cookie`验证用户。`session`只存放当前浏览器页面中，页面一旦关闭，`session`也就没了。`application`也叫`context`，上下文，是一块公共区域，存储当前`WebApp`应用下所有`servlet`小程序可以访问的内容。这个区域是容器内部小程序共享的。
+对于这三个东西，要搞清楚，才能理解`web`开发。
+
+
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
