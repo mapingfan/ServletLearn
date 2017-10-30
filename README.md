@@ -51,5 +51,18 @@ Web程序三大件：`cookie,session,application`.这三个东西始终围绕`we
 
 学习`Java Bean`,了解`Bean`存在的理由，只是一套标准，一个类。使用`Bean`类封装数据库连接相关信息，在`servlet`中连接数据库，读数据。
 
+---
+
+### Day4
+
+`<%!`里面声明的是成员变量。因为`jsp`也是`servlet`小程序，而且整个程序运行过程中，`servlet`只实例化一次，所以这个变量每次访问都是访问同一个。
+在`<%`里面声明的变量是局部变量。不可以在`<%`里面声明方法，只能执行语句。
+可以在`<!%`里面声明方法；
+`jsp`的三种注释方法
+```
+  <%--comments --%>
+  <% /*comments */ %>
+  <% //comments  %>
+```
 
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
