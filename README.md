@@ -64,5 +64,33 @@ Web程序三大件：`cookie,session,application`.这三个东西始终围绕`we
   <% /*comments */ %>
   <% //comments  %>
 ```
+html的注释在客户端网页中是可以看见的，但是`jsp`的注释在网页中无法看见。
+```
+<%@ page 指令中的四个重点。contentType="text/html;charset=gb2312" errorPage="Error.jsp" isErrorPage="true"  import="java.util.*"
+我们可以看到page指令的形式，都是属性=属性值。
+
+<%@include file="ErrorPage.html"%> 先包含，然后编译执行。
+include指令，用于包含文件；同jsp:include区分，这个是先执行，遇到在编译。
+
+<jsp:include page="multiply.jsp">
+    <jsp:param name="first" value="<%=value1%>"/>
+    <jsp:param name="second" value="<%=value2%>"/>
+</jsp:include>
+
+学习这种包含文件指令；
+同<%@include file="divide.jsp"%>区分开。
+下面的这种file属性的不能指定参数，上面的可以指定参数。
+上面的是遇到时候在编译，下面这个先加载进来，然后就编译执行。
+```
+```
+<jsp:forward page="blue.jsp">
+    <jsp:param name="1" value="1"/>
+    <jsp:param name="2" value="2"/>
+</jsp:forward>
+<% response.sendRedirect("blue.jsp"); %>
+两者的区别；
+上面的跳转，浏览器地址栏仍是显示跳转前的地址，但是界面是跳转后的，共用一个request对象。
+下面的跳转，其实是发起了两次请求。不共用request对象。
+```
 
 [1]: http://blog.csdn.net/antony9118/article/details/51800404
